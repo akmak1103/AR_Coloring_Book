@@ -80,7 +80,7 @@ public class RegionCapture : MonoBehaviour
 		}
 		else
 		{
-			GetComponent<MeshRenderer>().material.mainTexture = VideoBackgroundTexure;
+			GetComponent<MeshRenderer>().material = BackgroundPlane.GetComponent<MeshRenderer>().material;
 			InitializeComplete = true;
 
 			if (UseBackgroundPlane && BackgroundPlane)
