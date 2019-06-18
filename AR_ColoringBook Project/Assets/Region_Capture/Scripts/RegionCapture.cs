@@ -72,6 +72,8 @@ public class RegionCapture : MonoBehaviour
 			}
 			else Debug.Log("Search BackgroundPlane");
 		}
+		
+		
 
 		if (!ARCamera || !RegionMesh || (UseBackgroundPlane && !BackgroundPlane) || !VideoBackgroundTexure || VideoBackgroundTexure.width == 0)
 		{
