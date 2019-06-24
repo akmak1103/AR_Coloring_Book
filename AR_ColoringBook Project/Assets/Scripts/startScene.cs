@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class startScene : MonoBehaviour
 {
-    void OnMouseDown() {
+    public void loadSc() {
         SceneManager.LoadScene("SampleScene");
     }
 }
