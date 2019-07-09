@@ -23,7 +23,7 @@ public class ObstacleSpawn : MonoBehaviour
         while (true)
         {
             GameObject obstacle1 = Instantiate (obstacle, spawnPosition.position, Quaternion.identity);
-            obstacle1.transform.Rotate(0,-28f,0,Space.Self);
+            obstacle1.transform.Rotate(0,-90f,0,Space.Self);
             Rigidbody rb = obstacle1.GetComponent<Rigidbody>();
             rb.velocity = new Vector3(50,0,0);
             yield return new WaitForSeconds(2f);
